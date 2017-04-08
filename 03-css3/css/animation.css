@@ -1,0 +1,16 @@
+.spritesheet {
+  background-image: url('../img/capguy-walk.png');
+  animation: walk 1s 0s steps(8) infinite;
+  height: 325px;
+  width: 184px;
+  display: inline-block;
+}
+
+@keyframes walk {
+    from     {
+      background-position: 0 0;
+    }
+    to   {
+      background-position: -1472px 0;
+    }
+}

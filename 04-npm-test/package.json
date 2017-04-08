@@ -1,0 +1,20 @@
+{
+  "name": "npm-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "move": "mv index.min.js dist/index.min.js && mv styles.min.css dist/styles.min.css",
+    "build": "npm run uglify && npm run prefixer && npm run move",
+    "prefixer": "postcss styles.css -o styles.min.css --use autoprefixer",
+    "uglify": "uglifyjs index.js -o index.min.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.6",
+    "express": "^4.15.2",
+    "postcss": "^5.2.16"
+  }
+}

@@ -1,0 +1,39 @@
+.card__container {
+  perspective: 1000px;
+  display: inline-block;
+}
+
+.card {
+  height: 325px;
+  width: 184px;
+  position: relative;
+}
+
+.card:hover .card__back {
+  transform: rotate3d(0, 1, 0, 0);
+}
+
+.card:hover .card__front {
+  transform: rotate3d(0, 1, 0, 180deg);
+}
+
+.card__front, .card__back {
+  transition: transform 1s;
+  backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card__front {
+  background-color: orange;
+  background-image: url('../img/capguy-walk.png');
+}
+
+.card__back {
+  backface-visibility: hidden;
+  transform: rotate3d(0, 1, 0, -180deg);
+  background-color: grey;
+}
