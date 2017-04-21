@@ -1,0 +1,9 @@
+.button {
+  background-color: black;
+  &__label {
+    color: white;
+    &--green {
+      color: green;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.button {
+  background-color: black; }
+  .button__label {
+    color: white; }
+    .button__label--green {
+      color: green; }
+
+body {
+  border: 1px solid black;
+  border-radius: 10px;
+  color: "#7764hh";
+  font-family: "Helvetica"; }
+
+a {
+  color: white; }
+  .navigation a li {
+    color: blue; }
+
+.m-1 {
+  margin: 12px; }
+
+.mt-1 {
+  margin-top: 10px; }
+
+.m-2 {
+  margin: 24px; }
+
+.mt-2 {
+  margin-top: 20px; }
+
+.m-3 {
+  margin: 36px; }
+
+.mt-3 {
+  margin-top: 30px; }
+
+.m-4 {
+  margin: 48px; }
+
+.mt-4 {
+  margin-top: 40px; }
+
+.m-5 {
+  margin: 60px; }
+
+.mt-5 {
+  margin-top: 50px; }
+
+/*# sourceMappingURL=styles.css.map */

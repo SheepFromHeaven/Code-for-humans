@@ -1,0 +1,5 @@
+//This is a mixin, a function in scss
+@mixin border-radius($pixels) {
+  border: 1px solid black;
+  border-radius: $pixels;
+}

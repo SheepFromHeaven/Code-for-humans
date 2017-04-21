@@ -1,0 +1,31 @@
+//You can import other scss scripts
+@import 'variables';
+@import "mixins";
+@import "button";
+
+//You can write comments with a double dash
+body {
+  //This is including a mixin
+  @include border-radius($br);
+  color: $blue;
+  font-family: $text-font;
+}
+
+//You can place the '&' wherever you want
+a {
+  color: white;
+  .navigation & li {
+    color: blue;
+  }
+}
+
+//For-loop in scss
+@for $i from 1 through 5 {
+  .m-#{$i} {
+    margin: 12px * $i;
+  }
+
+  .mt-#{$i} {
+    margin-top: 10px * $i;
+  }
+}
