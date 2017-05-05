@@ -1,0 +1,31 @@
+body {
+  background-color: yellow;
+  height: 100vh;
+}
+
+.clicked {
+  transition: background-color 1s;
+  background-color: orange;
+}
+
+.card {
+  width: 50%;
+  font-size: 10px;
+  background-color: grey;
+  height: 500px;
+  transition: 1s all;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card.active {
+  font-size: 18px;
+  background-color: white;
+  height: 200px;
+}
+
+.card.active img {
+  display: none;
+}
